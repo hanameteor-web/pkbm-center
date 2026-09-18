@@ -34,6 +34,32 @@ Project ini dibuat sebagai portfolio untuk menerapkan pengembangan aplikasi web 
 * **JavaScript**
 * **Laravel Breeze**
 
+## 📸 Screenshots
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Data Siswa
+
+![Data Siswa](screenshots/data-siswa.png)
+
+### Data Guru
+
+![Data Guru](screenshots/data-guru.png)
+
+### Data Kelas
+
+![Data Kelas](screenshots/data-kelas.png)
+
+### Absensi
+
+![Absensi](screenshots/absensi.png)
+
+### Laporan Absensi
+
+![Laporan Absensi](screenshots/laporan-absensi.png)
+
 ## 📂 Struktur Project
 
 Project ini menggunakan struktur standar Laravel, dengan beberapa bagian utama:
