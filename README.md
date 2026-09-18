@@ -50,7 +50,7 @@ Project ini dibuat sebagai portfolio untuk menerapkan pengembangan aplikasi web 
 
 ### Data Kelas
 
-![Data Kelas](screenshots/kelas.png))
+![Data Kelas](screenshots/kelas.png)
 
 ### Absensi
 
