@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Data Siswa PKBM Center</title>
 
     <style>
@@ -69,36 +68,22 @@
             text-align: center;
         }
 
-        .foto {
-            width: 10%;
-            text-align: center;
-        }
-
         .nama {
-            width: 20%;
+            width: 24%;
         }
 
         .nis {
-            width: 12%;
+            width: 13%;
             text-align: center;
         }
 
         .kelas {
-            width: 15%;
+            width: 17%;
             text-align: center;
         }
 
         .alamat {
-            width: 37%;
-        }
-
-        .student-photo {
-            width: 40px;
-            height: 50px;
-        }
-
-        .no-photo {
-            color: #999;
+            width: 40%;
         }
 
         .total {
@@ -119,9 +104,7 @@
 
     <div class="header">
         <h1>PKBM CENTER</h1>
-
         <h2>DAFTAR DATA SISWA</h2>
-
         <p>Data seluruh siswa</p>
 
         <div class="line"></div>
@@ -131,7 +114,6 @@
         <thead>
             <tr>
                 <th class="no">No</th>
-                {{-- <th class="foto">Foto</th> --}}
                 <th class="nama">Nama Siswa</th>
                 <th class="nis">NIS</th>
                 <th class="kelas">Kelas</th>
@@ -145,29 +127,6 @@
                     <td class="no">
                         {{ $loop->iteration }}
                     </td>
-
-                    {{-- <td class="foto">
-                        @if ($student->photo) --}}
-
-                            {{-- @php
-                                $photoPath = public_path(
-                                    'student_uploads/' . $student->photo
-                                );
-                            @endphp
-
-                            @if (file_exists($photoPath))
-                                <img
-                                    src="{{ $photoPath }}"
-                                    class="student-photo"
-                                >
-                            @else
-                                <span class="no-photo">-</span>
-                            @endif
-
-                        @else
-                            <span class="no-photo">-</span>
-                        @endif
-                    </td> --}}
 
                     <td class="nama">
                         {{ $student->name }}
@@ -185,10 +144,9 @@
                         {{ $student->address ?: '-' }}
                     </td>
                 </tr>
-
             @empty
                 <tr>
-                    <td colspan="6" style="text-align: center;">
+                    <td colspan="5" style="text-align: center;">
                         Data siswa belum tersedia.
                     </td>
                 </tr>
@@ -208,5 +166,4 @@
     </div>
 
 </body>
-
 </html>
