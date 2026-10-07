@@ -20,6 +20,7 @@ Project ini dibuat sebagai portfolio untuk menerapkan pengembangan aplikasi web 
 * 📋 Absensi Siswa
 * 📊 Laporan Absensi berdasarkan bulan
 * 📈 Dashboard dengan ringkasan data dan grafik
+* 🔍 Pencarian data
 * 🖼️ Upload foto siswa
 * 👤 Role Admin
 * 📄 Export data siswa ke PDF
@@ -32,6 +33,7 @@ Project ini dibuat sebagai portfolio untuk menerapkan pengembangan aplikasi web 
 * **Blade**
 * **HTML & CSS**
 * **JavaScript**
+* **Chart.js**
 * **Laravel Breeze**
 
 ## 📸 Screenshots
@@ -82,6 +84,9 @@ routes/
 
 public/
 └── ...
+
+tests/
+└── Feature/
 
 README.md
 ```
@@ -142,6 +147,16 @@ Aplikasi dapat diakses melalui:
 http://127.0.0.1:8000
 ```
 
+## 🧪 Menjalankan Test
+
+Proyek ini memakai [Pest](https://pestphp.com). Test berjalan di database SQLite sementara (di memori), sehingga tidak mengubah data MySQL.
+
+Pastikan `composer install` sudah dijalankan, lalu:
+
+```bash
+php artisan test
+```
+
 ## 👩‍💻 About This Project
 
 Project ini dikembangkan sebagai project portfolio untuk mempraktikkan:
@@ -154,6 +169,7 @@ Project ini dikembangkan sebagai project portfolio untuk mempraktikkan:
 * File upload
 * Absensi dan laporan
 * Export PDF
+* Automated feature testing dengan Pest
 * Deployment aplikasi Laravel ke hosting
 
 ## 🔗 Links
